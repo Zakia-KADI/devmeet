@@ -1,84 +1,119 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevMeet - Une soirée pour les développeurs</title>
+    <title>DevMeet</title>
     <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body>
-    <header>
-        <a href="#">DevMeet</a>
-        <nav>
+
+<body class="bg-slate-950 text-white">
+
+    <header class="bg-slate-900 p-6">
+        <h1 class="text-3xl font-bold text-cyan-400">DevMeet</h1>
+        <nav class="flex gap-6 mt-4">
             <a href="#programme">Programme</a>
             <a href="#info">Infos pratiques</a>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1 id="titre-presentation">DevMeet</h1>
-            <h2>Une soirée pour les développeurs</h2>
-            <p>Trois conférences courtes pour découvrir des pratiques concrètes, échanger et repartir avec de nouvelles idées pour vos projets web.</p>
-            <div>
-                <p><time datetime="2026-11-12">12 novembre 2026</time></p>
-                <p>Lyon</p>
-            </div>
-            <a href="#programme">Voir le programme</a>
+
+    <main class="max-w-6xl mx-auto p-6">
+
+        <section class="bg-slate-900 p-6 rounded-xl">
+            <h2 class="text-3xl font-bold text-cyan-400">
+                Une soirée pour les développeurs
+            </h2>
+
+            <p class="mt-4">
+                Trois conférences courtes pour découvrir des pratiques concrètes,
+                échanger et repartir avec de nouvelles idées pour vos projets web.
+            </p>
+
+            <p class="mt-4">12 novembre 2026 - Lyon</p>
+
+            <a href="#programme" class="inline-block bg-cyan-400 text-black p-3 rounded-lg mt-4">
+                Voir le programme
+            </a>
         </section>
-        <section id="programme">
-            <h2 id="titre-programme">Au programme</h2>
-            <p>Découvrez les trois conférences de la soirée.</p>
-            <div>
-                <article>
-                    <time datetime="18:45">18 h 45</time>
-                    <h3>Des interfaces qui restent lisibles</h3>
-                    <p>Camille Martin - Développeuse front-end</p>
-                    <p>Hiérarchie, contrastes et espacements : des choix simples qui améliorent une interface.</p>
+
+        <section id="programme" class="mt-12">
+            <h2 class="text-3xl font-bold text-center">Au programme</h2>
+            <p class="text-center mt-4">Découvrez les trois conférences de la soirée.</p>
+
+            <div class="grid md:grid-cols-3 gap-6 mt-6">
+
+                <article class="bg-slate-900 p-6 rounded-xl">
+                    <p class="text-cyan-400">18 h 45</p>
+                    <h3 class="text-xl font-bold mt-4">
+                        Des interfaces qui restent lisibles
+                    </h3>
+                    <p class="mt-4">Camille Martin - Développeuse front-end</p>
+                    <p class="mt-4">
+                        Hiérarchie, contrastes et espacements :
+                        des choix simples qui améliorent une interface.
+                    </p>
                 </article>
-                <article>
-                    <time datetime="19:15">19 h 15</time>
-                    <h3>Un CSS plus facile à maintenir</h3>
-                    <p>Alex Moreau - Intégrateur web</p>
-                    <p>Organiser ses styles et ses composants pour faire évoluer un projet sans tout reprendre.</p>
+
+                <article class="bg-slate-900 p-6 rounded-xl">
+                    <p class="text-cyan-400">19 h 15</p>
+                    <h3 class="text-xl font-bold mt-4">
+                        Un CSS plus facile à maintenir
+                    </h3>
+                    <p class="mt-4">Alex Moreau - Intégrateur web</p>
+                    <p class="mt-4">
+                        Organiser ses styles et ses composants pour
+                        faire évoluer un projet sans tout reprendre.
+                    </p>
                 </article>
-                <article>
-                    <time datetime="19:45">19 h 45</time>
-                    <h3>Du code au site en ligne</h3>
-                    <p>Sam Benali - Développeur web</p>
-                    <p>Comprendre les vérifications utiles avant de livrer une petite application web.</p>
+
+                <article class="bg-slate-900 p-6 rounded-xl">
+                    <p class="text-cyan-400">19 h 45</p>
+                    <h3 class="text-xl font-bold mt-4">
+                        Du code au site en ligne
+                    </h3>
+                    <p class="mt-4">Sam Benali - Développeur web</p>
+                    <p class="mt-4">
+                        Comprendre les vérifications utiles avant
+                        de livrer une petite application web.
+                    </p>
                 </article>
+
             </div>
         </section>
-        <section id="info">
-            <h2 id="titre-info">Informations pratiques</h2>
-            <div>
+
+        <section id="info" class="bg-slate-900 p-6 rounded-xl mt-12">
+            <h2 class="text-3xl font-bold text-center">
+                Informations pratiques
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-6 mt-6">
+
                 <div>
-                    <h3>Lieu</h3>
+                    <h3 class="text-xl font-bold text-cyan-400">Lieu</h3>
                     <p>Le Hub, Lyon</p>
                 </div>
+
                 <div>
-                    <h3>Horaires</h3>
+                    <h3 class="text-xl font-bold text-cyan-400">Horaires</h3>
                     <p>Accueil à 18 h 30</p>
-                    <p>Fin de la soirée à 21 h</p>
+                    <p>Fin à 21 h</p>
                 </div>
+
                 <div>
-                    <h3>Tarif</h3>
+                    <h3 class="text-xl font-bold text-cyan-400">Tarif</h3>
                     <p>Entrée gratuite, dans la limite des places disponibles.</p>
                 </div>
+
                 <div>
-                    <h3>Contact</h3>
+                    <h3 class="text-xl font-bold text-cyan-400">Contact</h3>
                     <p>bonjour@devmeet.example</p>
                 </div>
+
             </div>
         </section>
+
     </main>
-    <footer>
-        <p>DevMeet</p>
-        <nav>
-            <a href="#programme">Programme</a>
-            <a href="#info">Infos pratiques</a>
-        </nav>
-        <p>12 novembre 2026 - Lyon</p>
-    </footer>
+
 </body>
 </html>
